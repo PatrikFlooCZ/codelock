@@ -1,55 +1,60 @@
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-        font-family: 'Poppins', sans-serif;
-    }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    transition: background-color 0.5s ease;
+}
 
-    .container {
-        text-align: center;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
+body.open {
+    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%); /* Zelené pozadí při otevření */
+}
 
-    h2 {
-        margin-bottom: 20px;
-        font-size: 24px;
-        color: #333;
-        font-weight: 600;
-    }
+body.closed {
+    background: linear-gradient(135deg, #ff6b6b 0%, #c94b4b 100%); /* Červené pozadí při zavření */
+}
 
-    button {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 10px;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: transform 0.2s ease, background-color 0.3s ease;
-        font-weight: 600;
-    }
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+}
 
-    button:active {
-        transform: scale(0.95);
-    }
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
 
-    button.close-button {
-        background-color: #f44336;
-    }
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-weight: 600;
+}
 
-    #doorStatus {
-        margin-top: 20px;
-        font-size: 18px;
-        color: #555;
-        font-weight: 400;
-    }
+button.close-button {
+    background-color: #f44336;
+}
+
+#doorStatus {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+    font-weight: 400;
+}
