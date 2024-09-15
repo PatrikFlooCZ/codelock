@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-    transition: background-color 0.5s ease;
+    transition: background 0.5s ease; /* Plynulý přechod mezi barvami pozadí */
 }
 
 body.open {
