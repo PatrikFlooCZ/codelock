@@ -5,16 +5,8 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-    transition: background 0.5s ease; /* Plynulý přechod mezi barvami pozadí */
-}
-
-body.open {
-    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%); /* Zelené pozadí při otevření */
-}
-
-body.closed {
-    background: linear-gradient(135deg, #ff6b6b 0%, #c94b4b 100%); /* Červené pozadí při zavření */
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%); /* Moderní modré pozadí */
+    transition: background 0.5s ease; /* Plynulý přechod barvy pozadí */
 }
 
 .container {
@@ -23,7 +15,6 @@ body.closed {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.5s ease;
 }
 
 h2 {
